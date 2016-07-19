@@ -9,4 +9,5 @@ obj/
 *.mode1v3
 *.pbxuser
 *.xcworkspace
+*.userprefs
 *.moved-aside/

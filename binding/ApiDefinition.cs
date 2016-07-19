@@ -1,7 +1,6 @@
 using System;
-
-using MonoTouch.Foundation;
-using MonoTouch.ObjCRuntime;
+using Foundation;
+using ObjCRuntime;
 
 namespace MonoTouch.Mixpanel {
 
@@ -178,7 +177,7 @@ namespace MonoTouch.Mixpanel {
 		void DeleteUser ();
 	}
 
-	[Model, BaseType (typeof (NSObject))]
+	[Protocol, Model, BaseType (typeof (NSObject))]
 	public partial interface MixpanelDelegate {
 
 		[Export ("mixpanelWillFlush:")]
